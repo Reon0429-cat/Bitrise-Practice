@@ -6,11 +6,19 @@
 //
 
 import UIKit
+import RealmSwift
+import Realm
+
+final class User: Object {
+    
+}
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.view.backgroundColor = .red
         
     }
 
