@@ -111,7 +111,6 @@
 				EB2A4A9B3396C417CF0C87FC /* Pods-Bitrise-PracticeTests.debug.xcconfig */,
 				37BF032F276CF3C581245404 /* Pods-Bitrise-PracticeTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
