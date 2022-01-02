@@ -10,7 +10,7 @@ import UIKit
 //import Realm
 //
 //final class User: Object {
-//    
+//
 //}
 
 class ViewController: UIViewController {

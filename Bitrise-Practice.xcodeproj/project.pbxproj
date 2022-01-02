@@ -7,10 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AB9B553627826D8900F6055F /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB9B553527826D8900F6055F /* Realm.framework */; };
-		AB9B553727826D8900F6055F /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AB9B553527826D8900F6055F /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		AB9B553927826FA600F6055F /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB9B553827826FA600F6055F /* RealmSwift.framework */; };
-		AB9B553A27826FA600F6055F /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AB9B553827826FA600F6055F /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		ABB287BD278245E90067B8B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB287BC278245E90067B8B2 /* AppDelegate.swift */; };
 		ABB287BF278245E90067B8B2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB287BE278245E90067B8B2 /* SceneDelegate.swift */; };
 		ABB287C1278245E90067B8B2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB287C0278245E90067B8B2 /* ViewController.swift */; };
@@ -46,8 +42,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				AB9B553A27826FA600F6055F /* RealmSwift.framework in Embed Frameworks */,
-				AB9B553727826D8900F6055F /* Realm.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -55,8 +49,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		AB9B553527826D8900F6055F /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
-		AB9B553827826FA600F6055F /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
 		ABB287B9278245E90067B8B2 /* Bitrise-Practice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bitrise-Practice.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABB287BC278245E90067B8B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ABB287BE278245E90067B8B2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -77,8 +69,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AB9B553927826FA600F6055F /* RealmSwift.framework in Frameworks */,
-				AB9B553627826D8900F6055F /* Realm.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,8 +92,6 @@
 		14DE6F6716F5035A94ABF276 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				AB9B553827826FA600F6055F /* RealmSwift.framework */,
-				AB9B553527826D8900F6055F /* Realm.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -170,7 +158,6 @@
 				ABB287B5278245E90067B8B2 /* Sources */,
 				ABB287B6278245E90067B8B2 /* Frameworks */,
 				ABB287B7278245E90067B8B2 /* Resources */,
-				AB2FFEF72782664200CCCC42 /* ShellScript */,
 				AB9B553427826C1500F6055F /* Embed Frameworks */,
 			);
 			buildRules = (
@@ -287,28 +274,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		AB2FFEF72782664200CCCC42 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/iOS/Realm.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/RealmSwift.framework",
-			);
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n/usr/local/bin/carthage copy-frameworks\n";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		ABB287B5278245E90067B8B2 /* Sources */ = {
