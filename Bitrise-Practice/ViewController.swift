@@ -7,11 +7,6 @@
 
 import UIKit
 import RealmSwift
-import Realm
-
-final class User: Object {
-
-}
 
 class ViewController: UIViewController {
 
